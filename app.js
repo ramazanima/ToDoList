@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 
 const app = express();
 
-app.set("view engine", "ejs"); // Use "set" instead of "use" for setting the view engine
+app.set("view engine", "ejs"); 
 
 app.get("/", (request, response) => {
   var today = new Date();
@@ -38,7 +38,7 @@ app.get("/", (request, response) => {
   }
 
   response.render("list", {
-    kindOfDay: day // Removed unnecessary semicolon (;) after day
+    kindOfDay: day 
   });
 });
 
