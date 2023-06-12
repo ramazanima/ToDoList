@@ -18,7 +18,7 @@ app.get("/", (request, response) => {
   };
   var day = today.toLocaleDateString("en-US", options);
 
-  response.render("list", { kindOfDay: day, newListItem: items });
+  response.render("list", { kindOfDay: day, newListItems: items });
 });
 
 app.post("/", function(request, response) {
