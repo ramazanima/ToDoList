@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 250px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="https://www.48hourslogo.com/oss/works/2022/01/08/1451784227/115168_45900_c28869a9-533d-43a9-961e-d5df9874713b.jpg">
+        </div>
+        <div class="head-text">
+            <h1>Book a table</h1>
+        </div>
+        <div>
+            <label for="booking_date">Booking Date</label>
+            <input type="date" id="booking_date" name="booking_date">
+        </div>
+        <div>
+            <label for="booking_people">Number of People</label>
+            <input type="range" id="booking_people" name="booking_people" min="1" max="10" value="4" oninput="this.nextElementSibling.value=this.value" >
+            <output>4</output>
+        </div>
+    </div>
+</body>
+</html>
