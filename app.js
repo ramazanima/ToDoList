@@ -12,13 +12,13 @@ app.set("view engine", "ejs");
 var items = [];
 var workItems = [];
 app.get("/", (request, response) => {
-  let day = date.getday();
+  const day = date.getday();
 
   response.render("list", { listTitle: day, newListItems: items });
 });
 
 app.post("/", function(request, response) {
-  let item = request.body.newItem;
+  const item = request.body.newItem;
 
   if (request.body.list === "Work"){
     workItems.push(item);
